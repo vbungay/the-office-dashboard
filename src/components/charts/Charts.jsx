@@ -5,51 +5,51 @@ import './Charts.scss'
 const Charts = () => {
     const data = [
         {
-            month: 'January',
+            month: 'Jan.',
             sales: 3000,
         },
         {
-            month: 'February',
+            month: 'Feb.',
             sales: 4000,
         },
         {
-            month: 'March',
+            month: 'Mar.',
             sales: 2500,
         },
         {
-            month: 'January',
+            month: 'Apr.',
             sales: 3000,
         },
         {
-            month: 'February',
+            month: 'May.',
             sales: 4000,
         },
         {
-            month: 'March',
+            month: 'Jun.',
             sales: 2500,
         },
         {
-            month: 'January',
+            month: 'Jul.',
             sales: 3000,
         },
         {
-            month: 'February',
+            month: 'Aug.',
             sales: 4000,
         },
         {
-            month: 'March',
+            month: 'Sept.',
             sales: 2500,
         },
         {
-            month: 'January',
+            month: 'Oct.',
             sales: 3000,
         },
         {
-            month: 'February',
+            month: 'Nov.',
             sales: 4000,
         },
         {
-            month: 'March',
+            month: 'Dec.',
             sales: 2500,
         },
     ];
@@ -57,9 +57,9 @@ const Charts = () => {
     return (
         <div className="chart">
             <h3 className="title">
-                Quarterly Sales
+                Annual Reports
             </h3>
-            <ResponsiveContainer width="100%" aspect={4 / 1}>
+            <ResponsiveContainer width="100%" height="100%" aspect={4 / 1}>
                 <LineChart data={data}>
                     <XAxis dataKey="month" stroke="#6c757d" />
                     <YAxis />
