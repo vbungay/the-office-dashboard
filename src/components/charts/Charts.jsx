@@ -59,14 +59,16 @@ const Charts = () => {
             <h3 className="title">
                 Annual Reports
             </h3>
-            <ResponsiveContainer width="100%" height="100%" aspect={3 / 1}>
-                <LineChart data={data}>
-                    <XAxis dataKey="month" stroke="#6c757d" />
-                    <YAxis />
-                    <Tooltip />
-                    <Line type="monotone" dataKey="sales" />
-                </LineChart>
-            </ResponsiveContainer>
+            <ResponsiveContainer width="100%" height={300}>
+    <LineChart data={data}>
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="month" stroke="#6c757d" />
+        <YAxis />
+        <Tooltip />
+        <Line type="monotone" dataKey="sales" />
+    </LineChart>
+</ResponsiveContainer>
+
         </div>
     )
 }
