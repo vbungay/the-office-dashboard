@@ -1,0 +1,112 @@
+@mixin for-mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+.featured {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @include for-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item {
+        flex: 1;
+        margin: 0px 20px;
+        padding: 30px;
+        -webkit-box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.7);
+        box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.2);
+
+        @include for-mobile {
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 20px;
+
+            @include for-mobile {
+                display: flex;
+            }
+        }
+
+        .money-container {
+            margin: 10px 0px;
+            display: flex;
+            flex-direction: column;
+
+            @include for-mobile {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .money {
+                font-size: 30px;
+                font-weight: 600;
+            }
+
+            .rate {
+                display: flex;
+                align-items: center;
+                color: #ef233c;
+                margin-top: 10px;
+
+                .icon {
+                    font-size: 14px;
+                    margin-right: 5px;
+                }
+
+                .positive {
+                    color: #38b000;
+                }
+
+                .negative {
+                    color: #ef233c;
+                }
+            }
+        }
+
+        .nums {
+            display: flex;
+            justify-content: space-between;
+
+            .rate {
+                display: flex;
+                align-items: center;
+                color: #2dc653;
+    
+                .icon {
+                    font-size: 14px;
+                    margin-right: 5px;
+                }
+    
+                .positive {
+                    color: #2dc653;
+                }
+    
+                .negative {
+                    color: #ef233c;
+                }
+            }
+
+            .right {
+                border: 1px solid #373737;
+                border-radius: 100%;
+                padding: 4px;
+                font-size: 16px;
+                background-color: #373737;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+
+        .sub {
+            font-size: 15px;
+            color: #6c757d;
+            margin-left: 5px;
+        }
+    }
+}
