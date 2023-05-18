@@ -6,11 +6,11 @@ const Charts = () => {
     const data = [
         {
             month: 'Jan.',
-            sales: 3000,
+            sales: 2910,
         },
         {
             month: 'Feb.',
-            sales: 4000,
+            sales: 3000,
         },
         {
             month: 'Mar.',
@@ -18,7 +18,7 @@ const Charts = () => {
         },
         {
             month: 'Apr.',
-            sales: 3000,
+            sales: 3100,
         },
         {
             month: 'May.',
@@ -26,11 +26,11 @@ const Charts = () => {
         },
         {
             month: 'Jun.',
-            sales: 2500,
+            sales: 3100,
         },
         {
             month: 'Jul.',
-            sales: 3000,
+            sales: 1500,
         },
         {
             month: 'Aug.',
@@ -59,11 +59,12 @@ const Charts = () => {
             <h3 className="title">
                 Annual Reports
             </h3>
-            <ResponsiveContainer width="100%" height="100%" aspect={4 / 1}>
+            <ResponsiveContainer width="100%" height="100%" aspect={3 / 1}>
                 <LineChart data={data}>
                     <XAxis dataKey="month" stroke="#6c757d" />
                     <YAxis />
-                    <Line type="mono" dataKey="sales" />
+                    <Tooltip />
+                    <Line type="monotone" dataKey="sales" />
                 </LineChart>
             </ResponsiveContainer>
         </div>
