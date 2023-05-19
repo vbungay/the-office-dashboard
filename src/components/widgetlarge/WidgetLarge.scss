@@ -24,6 +24,10 @@
         width: 100%;
         border-spacing: 20px;
 
+        @include for-mobile {
+            border-spacing: 15px;
+        }
+
         .table-tr {
 
             .table-th {
