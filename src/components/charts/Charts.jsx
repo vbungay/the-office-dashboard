@@ -34,7 +34,7 @@ const Charts = () => {
         },
         {
             month: 'Aug.',
-            sales: 4000,
+            sales: 3240,
         },
         {
             month: 'Sept.',

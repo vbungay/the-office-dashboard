@@ -1,6 +1,28 @@
-
-
 @font-face {
   font-family: "American";
   src: url('./fonts/American\ Typewriter\ Regular.ttf') format('truetype');
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  /* Adjust the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  /* Adjust the color of the scrollbar track */
+  border-radius: 10px;
+  /* Make the track rounded */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ddb892;
+  /* Adjust the color of the scrollbar thumb */
+  border-radius: 10px;
+  /* Make the thumb rounded */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Adjust the color of the scrollbar thumb when hovered */
 }
