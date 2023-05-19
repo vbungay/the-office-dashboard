@@ -60,15 +60,14 @@ const Charts = () => {
                 Annual Reports
             </h3>
             <ResponsiveContainer width="100%" height={300}>
-    <LineChart data={data}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="month" stroke="#6c757d" />
-        <YAxis />
-        <Tooltip />
-        <Line type="monotone" dataKey="sales" />
-    </LineChart>
-</ResponsiveContainer>
-
+                <LineChart data={data}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="month" stroke="#6c757d" />
+                    <YAxis />
+                    <Tooltip />
+                    <Line type="monotone" dataKey="sales" />
+                </LineChart>
+            </ResponsiveContainer>
         </div>
     )
 }
