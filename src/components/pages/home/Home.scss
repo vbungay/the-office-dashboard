@@ -1,4 +1,9 @@
 .home {
     flex: 4;
     overflow-x: hidden;
+
+    .widgets {
+        display: flex;
+        margin: 20px;
+    }
 }
