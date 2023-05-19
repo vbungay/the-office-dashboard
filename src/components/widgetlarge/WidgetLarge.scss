@@ -11,6 +11,79 @@
     padding: 20px;
 
     @include for-mobile {
-        flex: 0 !important;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .table {
+        width: 100%;
+        border-spacing: 20px;
+
+        .table-tr {
+
+            .table-th {
+                text-align: left;
+            }
+
+            .user {
+                display: flex;
+                align-items: center;
+
+                .img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-right: 10px;
+                }
+
+                .name {
+                    font-size: 14px;
+                    font-weight: 600;
+
+                    @include for-mobile {
+                        display: none;
+                    }
+                }
+            }
+
+            .date {
+                font-weight: 300;
+            }
+
+            .amount {
+                font-weight: 300;
+            }
+
+            .status {
+
+                .btn {
+                    border: none;
+                    border-radius: 20px;
+                    padding: 6px 10px;
+                    width: 80px;
+                }
+
+                .Approved {
+                    color: #132a13;
+                    background-color: #c1fba4;
+                }
+
+                .Pending {
+                    color: #926c15;
+                    background-color: #ffee99;
+                }
+
+                .Declined {
+                    color: #540804;
+                    background-color: #fbc3bc;
+                }
+            }
+        }
     }
 }
