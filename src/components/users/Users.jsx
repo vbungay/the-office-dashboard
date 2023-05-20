@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import avatar from '../../assets/avatar.png'
 import dwight from '../../assets/dwight.jpg'
 import jim from '../../assets/jim.jpg'
 import stanley from '../../assets/stanley.jpg'
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 import { Delete, Edit } from '@mui/icons-material';
+import { Link } from 'react-router-dom'
 import './Users.scss'
 
 const Users = () => {
+
     const columns: GridColDef[] = [
         { field: 'id', headerName: 'ID', width: 70 },
         {
@@ -29,13 +31,15 @@ const Users = () => {
             width: 200,
             renderCell: (params: GridValueGetterParams) => (
                 <div>
-                    <button className="btn edit">
-                        <div className="btn-edit">
-                            <Edit className="user-icon" />
-                            Edit
-                        </div>
-                    </button>
-                    <button className="btn delete">
+                    <Link to={"/users/" + params.row.id}>
+                        <button className="btn edit">
+                            <div className="btn-edit">
+                                <Edit className="user-icon" />
+                                Edit
+                            </div>
+                        </button>
+                    </Link>
+                    <button className="btn delete" onClick={() => handleDelete(params.row.id)}>
                         <div className="btn-delete">
                             <Delete className="user-icon" />
                             Delete
@@ -65,11 +69,18 @@ const Users = () => {
         { id: 15, name: 'Phyllis Vance', email: 'Phallus@gmail.com', avatar: stanley, occupation: "Sales Representative" },
         { id: 16, name: 'Stanley Hudson', email: 'PapaBear@gmail.com', avatar: stanley, occupation: "Sales Representative" },
     ];
+    
+    const [data, setData] = useState(rows);
+
+    const handleDelete = (id) => {
+        setData(data.filter((item) => item.id !== id));
+    }
+
     return (
         <div className="users">
             <div style={{ overflowX: 'auto', maxWidth: '100%' }}>
                 <DataGrid
-                    rows={rows}
+                    rows={data}
                     disableRowSelectionOnClick
                     columns={columns}
                     initialState={{
