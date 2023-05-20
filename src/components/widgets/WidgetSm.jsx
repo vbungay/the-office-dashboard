@@ -18,7 +18,7 @@ const WidgetSm = () => {
                             <img src={Dwight} alt="" className="image" />
                             <div className="user">
                                 <span className="name">Dwight Schrute</span>
-                                <span className="job-title">Salesman</span>
+                                <span className="job-title">Sales Rep</span>
                             </div>
                         </div>
                         <button className="btn">
@@ -30,7 +30,7 @@ const WidgetSm = () => {
                             <img src={Jim} alt="" className="image" />
                             <div className="user">
                                 <span className="name">Jim Halpert</span>
-                                <span className="job-title">Salesman</span>
+                                <span className="job-title">Sales Rep</span>
                             </div>
                         </div>
                         <button className="btn">
@@ -42,7 +42,7 @@ const WidgetSm = () => {
                             <img src={Stanley} alt="" className="image" />
                             <div className="user">
                                 <span className="name">Stanley Hudson</span>
-                                <span className="job-title">Salesman</span>
+                                <span className="job-title">Sales Rep</span>
                             </div>
                         </div>
                         <button className="btn">
@@ -54,7 +54,7 @@ const WidgetSm = () => {
                             <img src={Phy} alt="" className="image" />
                             <div className="user">
                                 <span className="name">Phyllis Lapin-Vance</span>
-                                <span className="job-title">Salesman</span>
+                                <span className="job-title">Sales Rep</span>
                             </div>
                         </div>
                         <button className="btn">
@@ -66,7 +66,7 @@ const WidgetSm = () => {
                             <img src={Andy} alt="" className="image" />
                             <div className="user">
                                 <span className="name">Andy Bernard</span>
-                                <span className="job-title">Salesman</span>
+                                <span className="job-title">Sales Rep</span>
                             </div>
                         </div>
                         <button className="btn">

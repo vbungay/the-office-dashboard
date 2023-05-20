@@ -1,6 +1,7 @@
 import React from 'react'
 import { NotificationsNone, Language, Settings } from '@mui/icons-material';
 import Avatar from '../../assets/avatar.png'
+import { Link } from 'react-router-dom';
 import './Navbar.scss'
 
 const Navbar = () => {
@@ -8,7 +9,9 @@ const Navbar = () => {
         <div className="navbar">
             <div className="wrapper">
                 <div className="topleft">
-                    <span className="logo">the office</span>
+                    <Link to="/">
+                        <span className="logo">the office</span>
+                    </Link>
                 </div>
                 <div className="top-right">
                     <div className="nav-icon">

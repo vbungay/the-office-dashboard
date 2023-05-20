@@ -6,6 +6,7 @@ import {
     ChatBubbleOutlineOutlined, ManageAccountsOutlined,
     Menu, Close
 } from '@mui/icons-material';
+import { NavLink } from 'react-router-dom';
 import './Sidebar.scss'
 
 const Sidebar = () => {
@@ -27,10 +28,10 @@ const Sidebar = () => {
                             Dashboard
                         </h3>
                         <ul className="list">
-                            <li className="list-item active">
+                            <NavLink to="/" className="list-item" activeClassName="active" onClick={toggleSidebar}>
                                 <Dashboard className="icon" />
                                 Home
-                            </li>
+                            </NavLink>
                             <li className="list-item">
                                 <Insights className="icon" />
                                 Analytics
@@ -84,10 +85,10 @@ const Sidebar = () => {
                             Staffs
                         </h3>
                         <ul className="list">
-                            <li className="list-item">
+                            <NavLink to="/users" className="list-item" activeClassName="active" onClick={toggleSidebar}>
                                 <AccountCircleOutlined className="icon" />
                                 Users
-                            </li>
+                            </NavLink>
                             <li className="list-item">
                                 <ManageAccountsOutlined className="icon" />
                                 Manage

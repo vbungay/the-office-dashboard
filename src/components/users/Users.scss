@@ -1,0 +1,62 @@
+@mixin for-mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+.users {
+    flex: 4;
+    width: 100%;
+
+    @include for-mobile {
+        margin-top: 30px;
+    }
+}
+
+.user-list {
+    display: flex;
+    align-items: center;
+
+    .img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+}
+
+.btn {
+    border: none;
+    padding: 6px 6px;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+
+    .user-icon {
+        font-size: 16px;
+    }
+
+    .btn-edit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-delete {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.edit {
+    background-color: #2dc653;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.delete {
+    background-color: #ef233c;
+    color: #fff;
+}

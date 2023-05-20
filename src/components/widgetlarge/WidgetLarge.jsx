@@ -3,7 +3,6 @@ import c1 from '../../assets/c1.jpg'
 import c2 from '../../assets/c2.jpg'
 import c3 from '../../assets/c3.jpg'
 import c4 from '../../assets/c4.jpg'
-import c5 from '../../assets/c5.jpg'
 import './WidgetLarge.scss'
 
 const WidgetLarge = () => {
